@@ -1,0 +1,90 @@
+:root {
+  --main-color: #03a9f4;
+  --button-color: #e91e63;
+}
+.main-title {
+  width: fit-content;
+  margin: 30px auto 50px;
+  position: relative;
+  font-size: 50px;
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 3px;
+  background-color: var(--main-color);
+}
+.tours-container {
+  width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0 0 0 / 10%);
+}
+.tours-container .tours-box {
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.tours-container .tours-box img {
+  max-width: 100%;
+}
+.tours-container .tours-box .tours-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.tours-container .tours-box .tours-info h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.tours-container .tours-box .tours-info h2 {
+  font-size: 18px;
+  color: var(--main-color);
+  text-shadow: 0 0 10px rgba(0, 0, 255, .4);
+}
+.tours-container .tours-box p {
+  padding: 20px;
+  line-height: 1.6;
+  color: #777;
+}
+.tours-container .tours-box p .read-more {
+  background-color: transparent;
+  border: none;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.tours-container .tours-box .not-int {
+  border: none;
+  padding: 10px 50px;
+  background-color: white;
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+  font-size: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loading {
+  text-align: center;
+  font-size: 50px;
+}
+.no-tours-wrapper .no-tours {
+  font-size: 30px;
+  width: fit-content;
+  padding: 20px;
+  margin: auto;
+}
+.no-tours-wrapper button {
+  display: block;
+  margin: auto;
+  background-color: var(--main-color);
+  color: rgba(255, 255, 255, .8);
+  border: none;
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
